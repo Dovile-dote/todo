@@ -11,13 +11,15 @@ function ToDo({ tsk, setDeleteData, setModalData }) {
     <li>
       <div className="content">
         <span className="number">{tsk.id}. </span>
-        <p>{tsk.task}</p>
-        <div className="tags-container">
-          {tsk.tags.map((tag, i) => (
-            <div className="tag" key={i}>
-              <span>{tag}</span>
-            </div>
-          ))}
+        <div className="task">
+          <p>{tsk.task}</p>
+          <div className="tags-container">
+            {tsk.tags.map((tag, i) => (
+              <div className="tag" key={i}>
+                <span>{tag}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="buttons">

@@ -41,7 +41,7 @@ function Edit({ modalData, setModalData, setEditData }) {
     <div className="editas ">
       <div className="edito-content">
         <div className="edito-header">
-          <h2>Edit task</h2>
+          <h2>Edit Your Task</h2>
           <button
             className="close"
             type="button"
